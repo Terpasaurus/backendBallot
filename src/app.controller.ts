@@ -8,9 +8,7 @@ export class claimTokensDTO{
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {
-
   }
-
   @Get('token-address') 
     getTokenAddress(){
       return this.appService.getTokenAddress();
